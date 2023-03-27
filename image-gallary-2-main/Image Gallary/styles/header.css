@@ -1,0 +1,142 @@
+.header{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    background-color: aliceblue;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    z-index: 100;
+}
+
+.left-section{
+    /* width: 150px; */
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu1{
+    margin-left: 5px;
+    margin-left: 20px;
+
+}
+.menu2{
+    margin-left: 25px;
+    height: 50px;
+}
+
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 600px;
+    
+    display: flex;
+    align-items: center;
+    
+
+
+}
+
+
+.search-bar{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    
+    
+    
+    
+}
+.sb{
+    width: 85%;
+    margin-right: 0px;
+    margin-right: -29px;
+}
+.search-button{
+    
+    width: 15%;
+    margin-left: 0px;
+    position: relative;
+}
+.search-button .hint {
+    position: absolute;
+    height: 25px;
+    background-color: rgb(173, 173, 173);
+    bottom: -30px;
+    right: -3px;
+    padding-left: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    opacity: 0;
+    pointer-events: none;
+    /* Added so that when we hover over the hint it does not count as a event and the hint we become invisible */
+}
+.search-button:hover .hint{
+    opacity: 1;
+    transition: 0.15;
+}
+/* hover is a psudo class */
+
+.search-box{
+    margin-left: 10px;
+    width: 90%;
+    font-size: 16px;
+    
+
+}
+.search-box::placeholder{
+    font: Arial;
+    font-size: 15px;
+    padding-left: 8px;
+}
+.bluetooth-icon{
+    height: 40px;
+    margin-left: 5px;
+    margin-top:7px;
+    margin-right: 9px;
+}
+.bell-icon{
+    height: 45px;
+    margin-top: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+}
+.notifications{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    height: 18px;
+    border-radius: 9px;
+    margin-right: -5px;
+    margin-top: -5px;
+}
+.right-section{
+    
+    width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pfp-img{
+    flex: 1;
+}
+.archive-icon{
+    flex: 1;
+    
+}
+
+/* border: none 
+means no border and if you set border-radius as half of the height then the container(button,etc) will become a cirle */

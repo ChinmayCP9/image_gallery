@@ -1,0 +1,49 @@
+body{
+    padding-top: 30px;
+    background-color: rgb(31, 31, 31);
+    padding-left: 84px;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+ @media (max-width: 900px) {
+    .video-grid{
+        grid-template-columns:  1fr 1fr 1fr;
+    } 
+}   
+@media (max-width: 1599px) and (min-width: 901px) {
+    .video-grid{
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+    } 
+}   
+@media (min-width: 1600px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+}
+/* media is used so that when the page size changes the grid will also change so that it will have the original size but lower elements in a row */
+
+.heading{
+    color: aquamarine;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.thumbnail{
+    position: relative;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    
+}
+.price{
+    position: absolute;
+    background-color: black;
+    height: 20px;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    
+}
